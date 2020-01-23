@@ -10,7 +10,10 @@ def load_library(path)
 end
 
 def get_japanese_emoticon(path, emoticon)
-  load_library(path)[:get_emoticon][emoticon]
+  if load_library(path)[:get_emoticon][emoticon]
+    load_library(path)[:get_emoticon][emoticon]
+  else
+    return 
   # code goes here
 end
 
