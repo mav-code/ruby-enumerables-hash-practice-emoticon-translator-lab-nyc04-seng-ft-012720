@@ -23,5 +23,6 @@ def get_english_meaning(path, emoticon)
     load_library(path)[:get_emoticon][emoticon]
   else
     return "Sorry, that emoticon was not found"
+  end
   
 end
